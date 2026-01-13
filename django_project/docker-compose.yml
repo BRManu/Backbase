@@ -22,7 +22,7 @@ services:
       - DEBUG=1
       - DJANGO_SETTINGS_MODULE=config.settings
       - DATABASE_URL=postgres://mycurrency:mycurrency@db:5432/mycurrency
-      - CURRENCY_BEACON_API_KEY=N1u4F3VzQFvKUbXWNTnG041rfvjwt6wo
+      - CURRENCY_BEACON_API_KEY=""
     command: >
       sh -c "python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
@@ -31,3 +31,4 @@ services:
 
 volumes:
   postgres_data:
+
